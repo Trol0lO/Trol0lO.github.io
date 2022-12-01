@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Pawssion Project </title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="pawssion project.html">  <img src="logo (3).png" alt="dog paw" width="300" height="75">  </a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="pawssion project.html">Home</a></li>
+              <li><a href="SARMIENTO_2ndPage.html">Fur-Adoption</a></li>
+              <li><a href="ANGELES_Rescues.html">Rescues</a></li>
+              <li><a href="Uy_Donate.html">Donate</a></li>
+              <li><a href="Volunteers-and-Staffs.html">Volunteers & Staffs</a></li>
+              <li><a href="FABICO_ST about us.html">About Us</a></li>
+              <li><a href="FABICO_ST contact.html">Contact Us</a></li>
+              <li><a href="FABICO_ST consent.html">Consent</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br /><br /><br /><br /><br /><br />
+
+
+    <script src="jsfile.js"></script>
+
+    <div class="myDiv">
+        <table class="center">
+            <tr>
+                <th><h1>HAPPY ENDS</h1></th>
+            <br>
+            </tr>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        </table>
+    </div>
+
+        <div class="text">
+
+          <h1 style="text-align: center;">Adopt, Don't shop!</h1>
+          <br>
+          <p style="text-align: justify;line-height: 1.5;text-indent: 50px">We are happy to share our Pawssion Project Furbabies who happily found their Forever Homes! We love all our rescues equally
+              and letting them go is definitely one of the hardest things we have to do. But just seeing other families fall in love with them…
+              and welcoming them to live their best lives in their new homes, <b>MAKES EVERYTHING WORTH IT!</b></p>  
+              <br>
+          <br />
+          <div class="row">
+              <div class="column">
+                  <img src="r1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="r2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="r3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                  <img src="r4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+              
+          </div>
+
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+              <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="r1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="r2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="r3.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="r4.jpg" style="width:100%">
+              </div>
+              
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                  <p id="caption"></p>
+              </div>
+
+
+              <div class="column">
+                  <img class="demo cursor" src="r1.jpg" style="width:100%" onclick="currentSlide(1)">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="r2.jpg" style="width:100%" onclick="currentSlide(2)">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="r3.jpg" style="width:100%" onclick="currentSlide(3)">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="r4.jpg" style="width:100%" onclick="currentSlide(4)">
+              </div>
+             
+          </div>
+          <br />
+      </div>
+
+      <script>
+          function openModal() {
+              document.getElementById("myModal").style.display = "block";
+          }
+
+          function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+          }
+
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+              showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+              showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) { slideIndex = 1 }
+              if (n < 1) { slideIndex = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              captionText.innerHTML = dots[slideIndex - 1].alt;
+          }
+      </script>
+  </div>
+
+            </div>
+            <br />
+        </div> 
+        </div>
+      <br>
+    <br>
+  <br>
+<Br>
+        <center><div class="et_pb_video_box"> <iframe title="Best Friend Stories Episode 2: Hope on Wheels | Animal Rescue Stories" width="1080" height="608" src="https://www.youtube.com/embed/7srkRZL0fqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div></center>
+
+<!-- Start of Rescues Section -->
+<div class="container" style="padding:128px 16px" id="Rescues">
+    <center><h1>Our Rescues</h1>
+    <br>
+    <h4 style="padding-left: 10px; padding-bottom: 20px">“Animals have a way of finding the people who need them and filling an emptiness we didn’t know we had.”</h4></center>
+    <br>
+    <p style="text-align: justify;line-height: 1.5;text-indent: 50px"> At the Pawssion Project shelters in Bacolod and Bulacan, hundreds of rescues are waiting to find their fur-ever homes. Many of
+        our Adoptables have been rescued from death row, from local pounds or from abusive environments. They are all <b>vaccinated,
+        dewormed </b> and <b>neutered</b> and can be visited anytime, just with prior registration.</p>  
+        <br>
+    <p style="text-align: justify;line-height: 1.5;text-indent: 50px">By choosing to adopt, you are giving an animal the chance to find a new home and to feel the love and security they deserve.
+        You are also helping free up more space in our shelters, allowing us to rescue and rehabilate more animals.</p>
+<br>
+    <p style="text-align: justify;line-height: 1.5;">Please note that starting Jan 2022, we will be implementing a <b>PHP1,000 ADOPTION FEE </b>to help with the upkeep of the shelter 
+        and also to cover what we have spent for the rescues’ rehabilitation. We also want to make sure that our adopters have the capacity 
+        to meet the needs of our rescues, who we all treat as family.</p>  
+<br>
+    <p style="text-align: justify;line-height: 1.5;text-indent: 50px">We are also advocates of adopting from <b>local pounds</b>, where dogs are regularly scheduled to be euthanized using <b>inhumane methods</b>
+        due to lack of funding. If you are interested and need guidance from the Pawssion Project team, feel free to contact us as well.v</p>
+<br>
+    <p style="text-align: center;line-height: 1.5;">Not ready to adopt? You can still support us in our Rescue Rehabilitation efforts by becoming a <b>Foster Volunteer!</b> By offering your time,
+         energy and home to an animal in need, you help in rehabilitating and preparing the animal for adoption into a permanent home, as well as help 
+         prevent overcrowding in our shelter. </p>
+    </div>
+  </div>
+  
+<!-- End of HAPPY ENDS Section -->
+
+
+</div><div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_light">
+				
+<!-- Start of RAINBOW BRIDGE Section -->
+
+
+<div class="myDiv">
+    <table class="center">
+        <tr>
+            <th><h1>RAINBOW BRIDGE</h1></th>
+        <br>
+        </tr>
+        <br>
+        <br>
+        
+    </table>
+</div>
+
+<div class="text">
+
+    <h1 style="text-align: center;font-family: 'Times New Roman';font-style: italic;font-weight: lighter;">“Just this side of heaven is a place called Rainbow Bridge.”</h1>
+    <br>
+    <p style="text-align: justify;line-height: 1.5; padding: 40px 80px;"><i>“When an animal dies that has been especially close to someone here, that pet goes to Rainbow Bridge. There are meadows and hills for all of<br>
+        our special friends so they can run and play together. There is plenty of food, water and sunshine, and our friends are warm and comfortable.<br> 
+        All the animals who had been ill and old are restored to health and vigor. Those who were hurt or maimed are made whole and strong again,<br>
+        just as we remember them in our dreams of days and times gone by. The animals are happy and content, except for one small thing; they each<br>
+        miss someone very special to them, who had to be left behind.<br>
+        They all run and play together, but the day comes when one suddenly stops and looks into the distance. His bright eyes are intent. His eager<br>
+        body quivers. Suddenly he begins to run from the group, flying over the green grass, his legs carrying him faster and faster.<br> 
+        You have been spotted, and when you and your special friend finally meet, you cling together in joyous reunion, never to be parted again. The<br>
+        happy kisses rain upon your face; your hands again caress the beloved head, and you look once more into the trusting eyes of your pet, so long<br>
+        gone from your life but never absent from your heart.<br>
+        Then you cross Rainbow Bridge together….”<br>
+        <br>
+        – Author unknown</i><br>
+        Losing a rescue is never easy, but we are comforted by the thought that they are now in a better place, free from pain and suffering. And that even during their last days, <br>
+        they knew what it felt like to be loved and to be cared for. In Loving Memory, we honor our rescues who have passed and who have all touched us deeply with their will to live. <br>
+        <b>This is why we do what we do: IT’S FOR ALL OF THEM.</b></p>
+        <br>
+
+    <br />
+    
+  <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column old posts">
+        <div class="content">
+          <a href="tootsie.jpg">
+          <img src="tootsie.jpg" alt="tootsie" style="width:100%"></a>
+          <h4 style="text-align: center; padding-top: 5%;color:#893101">TOOTSIE - March 5, 2021</h4>
+          <p style="text-align: justify;line-height: 1.5;">Tootsie was a Senior Dog, left to suffer and die because owner does not have the means to send her to the vet.  She was left to die, suffering so much by the street, in so much pain, because they said, she was gonna die anyway. She was suffering from organ failure and pyometra, she was in really bad shape but we kept our hopes up. Unfortunately, she went into septic shock just hours before her scheduled surgery and she did not make it. A Pawssion Volunteer was already willing to take her in, but God had better plans. Run free Tootsie, you did not die in vain.</p>
+        </div>
+      </div>
+      <div class="column  old posts">
+        <div class="content">
+          <a href="mimi.jpg"><img src="mimi.jpg" alt="mimi" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">MIMI - March 6, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">Mimi was a Senior Dog who was rescued from the streets after being abandoned by her previous owners. She had to undergo surgery to remove a large kidney stone. Luckily, the surgery was successful and she was adopted by a Pawssion Volunteer. Unfortunately, she did not make it and passed away peacefully in her sleep. We like to think that she just wanted to say goodbye to her new Fur Momma, who was also the reason why we were able to rescue her. She was buried at our Bulacan Shelter, where she will always be with her new family.</p>
+        </div>
+      </div>
+      <div class="column  old posts">
+        <div class="content">
+          <a href="jason.jpg"><img src="jason.jpg" alt="jason" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">JASON - March 24, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">Jason was an Adult Dog who was rescued from the streets at 1AM in the morning with the help of his reporter, Ms. Rhea, our very dedicated volunteers and his namesake Grab driver, Kuya Jason. He was such in a bad condition, requiring emergency vet attention, for 3 full days prior to being rescued. His was a severe case of TVT, it was already all over his body and he tested positive for erlichia. He fought ’til the end: he was even revived 3 times but it was already his time to enjoy dog heaven. He lost his battle but we gave him a fighting chance. We assured him he was loved.</p>
+      </div>
+      </div>
+      <div class="column  old posts">
+        <div class="content">
+          <a href="sonny.jpg"><img src="sonny.jpg" alt="sonny" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">SONNY - March 29, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">We rescued Sonny from the streets despite being overwhelmed with numerous new rescues. Unfortunately, upon being brought to the vet, he had infections, a skin problem, and tested positive for Distemper. We had to confine him in a Distemper Clinic and still hoped to find him a Foster Home. We also already had Sponsors who immediately pledged for him to at least help with the vet bills. But God had other plans and He needed another angel. He collapsed and the clinic still tried to revive him, but ultimately his body gave up. He was buried at our Bulacan Shelter, where at least he finally has a place to call his home.</p>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+    
+        <div class="column old posts">
+        <div class="content">
+          <a href="shaw.jpg"> <img src="shaw.jpg" alt="shaw" style="width:100%"></a>
+          <h4 style="text-align: center; padding-top: 5%;color:#893101">SHAW - March 29, 2021</h4>
+          <p style="text-align: justify;line-height: 1.5;">One of our favorite rescues, one of the ultimate symbols of hope, Shaw, also crossed the rainbow bridge. He was a stray rescued by T. Nelly last year. He had a tumor on his face and even tested positive for Distemper. But with care, love and difficult but successful chemo sessions, Shaw found his smile again after the tumor was gone. He was adopted by his foster parent, Kuya James, and was loved for more than a year. We still don’t know what caused his death, but all we know is that God has better plans and maybe, just maybe, Shaw gave way for the 2 puppies Kuya James rescued and sacrificed his life instead.</p>
+        </div>
+      </div>
+      <div class="column old posts">
+        <div class="content">
+          <a href="potchi.jpg"> <img src="potchi.jpg" alt="potchi" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">POTCHI - April 14, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">Potchi was a senior dog and was a stray for most of her life. She was sweet and loving, but struggling, alone and homeless. She was reposted for help but no one stepped up to give her a chance. Potchi was really sick: she was anemic, had sarcoptic mange and tested positive for Ehrlichiosis. But after dedicated care in the Bulacan Shelter, she bloomed into a healthier and more content version of herself. Unfortunately, she wasn’t long for the world anymore and passed quietly in her sleep. But at least we know that in the end, she had a family and found a place she could call her home.</p>
+      </div>
+      </div>
+      <div class="column old posts">
+        <div class="content">
+          <a href="hyblu.jpg"> <img src="hyblu.jpg" alt="hyblu" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">HYBLU - April 15, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">The team travelled all the way to Rizal to rescue Hyblu. Her tumor had grown so big that it already covered her whole face, but she remained a calm and gentle dog. After several chemo sessions, the future was looking really bright for our dear Hyblu: she started smiling again and we finally saw her beautiful eyes! Unfortunately, her sickness resulted in complications with her breathing, and ultimately, Hyblu passed away in her sleep. But we are comforted by the fact that she left this world knowing people never gave up on her, and that they gave her a chance to see the world clearly once again.</p>
+      </div>
+      </div>
+      <div class="column old posts">
+        <div class="content">
+          <a href="park.jpg"><img src="park.jpg" alt="park" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">PARK - April 22, 2021</h4>
+        <p style="text-align: justify;line-height: 1.5;">Park was rescued from Caloocan, along with her fur-mom, Cali and her fur-sister, Sparky, after employees from Top Up Philippines reported them. Park was a little sick and weak at first, but after just a few days in the shelter, her true personality came out. She was such a bundle of joy and energy and was inseparable from her sister, Sparky. But tragedy struck and Park suddenly got sick from Distemper. The team rushed her to a Distemper Clinic but the illness took hold too fast, and they were not able to save her. We had high hopes for Park, but at least in the end, she found a family and home that showed her she was worthy.</p>
+      </div>
+      </div>
+    </div>
+      <div class="row">
+      <div class="column  old posts">
+        <div class="content">
+          <a href="sakang.jpg">  <img src="sakang.jpg" alt="sakang" style="width:100%"></a>
+          <h4 style="text-align: center; padding-top: 5%;color:#893101">SAKANG - April 27, 2021</h4>
+          <p style="text-align: justify;line-height: 1.5;">Sakang was our dear fighter: she held on for as long as she could for us. Her wounds and fractures were fatal. She had a severe infection due to Pyometra. There was a small chance she would even survive the operations. In spite of all the risks, we took the chance and said yes to saving her. She was our miracle. We were really looking forward for her recovery, her new fur-ever home was already waiting for her. But God had other plans. To our dear Sakang, thank you for fighting for us and for being a symbol of hope. Know that your life will not be put in vain. We will keep fighting for all the abused and neglected animals.</p>
+        </div>
+      </div>
+      <div class="column most recent">
+        <div class="content">
+          <a href="pandak.jpg"><img src="pandak.jpg" alt="pandak" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">PANDAK - April 29, 2021</h4>
+        </div>
+      </div>
+      <div class="column most recent">
+        <div class="content">
+          <a href="shadow.jpg"><img src="shadow.jpg" alt="shadow" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">SHADOW - May 21, 2021</h4>
+        </div>
+      </div>
+      <div class="column most recent">
+      <div class="content">
+        <a href="ely.jpg"> <img src="ely.jpg" alt="ely" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">ELY - July 22, 2021</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="column most recent">
+        <div class="content">
+          <a href="emma.jpg"> <img src="emma.jpg" alt="emma" style="width:100%"></a>
+          <h4 style="text-align: center; padding-top: 5%;color:#893101">EMMA - August 25, 2021</h4>
+        </div>
+      </div>
+      <div class="column most recent">
+        <div class="content">
+          <a href="cobe.jpg"><img src="cobe.jpg" alt="cobe" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">COBE - October 23, 2021</h4>
+        </div>
+      </div>
+      <div class="column most recent">
+        <div class="content">
+          <a href="apple.jpg"><img src="apple.jpg" alt="apple" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">APPLE - October 23, 2021</h4>
+        </div>
+      </div>
+        <div class="column most recent">
+        <div class="content">
+          <a href="whitey.jpg"> <img src="whitey.jpg" alt="whitey" style="width:100%"></a>
+        <h4 style="text-align: center; padding-top: 5%;color:#893101">WHITEY - November 23, 2021</h4>
+        </div>
+      </div>
+    </div>
+  </div>        
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+    <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+    
+
+<!--End of RAINBOW BRIDGE Section-->
+
+  
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+
+<script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 20) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+    }
+</script>
+
+
+<!-- FOOTER SECTION STARTS -->
+
+
+<footer>
+    <div class="footer-content">
+        <a href="pawssion project.html">  <img src="logo (4).png" alt="dog paw" width="300" height="75">  </a>
+        <br />
+        <p>Bulacan Shelter: 1429 Paradise 1, Purok 7 Tungkong Mangga, SJDM, Bulacan <br />Bacolod Shelter: GM Cordova Ave (Buri Road), Bacolod, Negros Occidental</p>
+        <p>info@pawssionproject.org</p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/PAWSsionProject" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/pawssionproject?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/pawssionproject/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/PawssionProject" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+</footer>
+
+<!-- FOOTER SECTION ENDS -->
+
+</body>
+</html>
+
